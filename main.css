@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 20px 0;
+    background-image: url('./img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#lista-tarefa li {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    word-wrap: break-word;
+    word-break: break-all;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+span.tarefa-texto {
+    margin-right: 10px;
+}
+
+#lista-tarefa .botoes-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container h1 {
+    margin: 20px 0;
+    text-align: center;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+    border-bottom: 1px solid #ccc;
+    color: rgb(255, 239, 11);
+}
+
+#tarefa-form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#tarefa-form button {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    color: rgb(255, 239, 11);
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.container label {
+    font-size: 24px;
+    color: rgb(255, 239, 11);
+    border-bottom: 1px solid #ccc;
+}
+
+#nome-tarefa {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 5px;
+    margin: 10px 0;
+    color: rgb(255, 239, 11);
+    outline: none;
+}
+
+#nome-tarefa::placeholder {
+    color: rgba(255, 239, 11, 0.616);
+}
+
+#lista-tarefa {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin-left: 10px;
+    font-family: "Libre Baskerville", serif;
+    font-size: 16px;
+    color: rgb(255, 239, 11);
+}
+
+.btn-apagar {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    background: url('./img/cancelar.png') no-repeat center center;
+    background-size: cover;
+    background-image: 10px;
+    
+}
+
+.btn-concluir {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    padding: 14px;
+    border-radius: 20px;
+    margin-right: 10px;
+    background: url('./img/concluido.png') no-repeat center center;
+    background-size: cover;
+    background-image: 20px;
+}
+
+.btn-ocultar {
+    background-color: transparent;
+    border: 2px solid rgb(255, 239, 11);
+    padding: 5px 10px;
+    border-radius: 30px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    color: rgb(255, 239, 11);
+}
+
+.btn-apagar-tudo {
+    background-color: #ff3333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: auto;
+    background-color: transparent;
+    border: 2px solid #ff0000;
+    border-radius: 30px;
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+.apagar-tarefa {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.tarefa-concluida {
+    text-decoration: line-through;
+}
+
+
